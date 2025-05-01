@@ -1,4 +1,6 @@
-```python
+#AI_Model
+
+
 (x_train, y_train), (x_test, y_test) = cifar100.load_data()
 
 y_train = to_categorical(y_train,100)
@@ -15,5 +17,3 @@ cnn = Sequential([
                 layers.Flatten(),
                 layers.Dense(512, activation='relu'),
                 layers.Dense(100, activation='softmax')])
-
-```
